@@ -1,0 +1,740 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", serif;
+    font-size: 15px;
+}
+
+nav {
+    background-color: #BACADA;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 10rem;
+}
+
+.navsides {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.rightNav img {
+    margin: 10px;
+    width: 50px;
+    height: 35px;
+    cursor: pointer;
+}
+
+
+        /* MEETING SCHEDULER */
+.modal{
+    position: fixed;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    width: 100%;
+}
+        /* MEETING SCHEDULER */
+
+.navsides li {
+    list-style: none;
+    background-color: #052357;
+    border-radius: 11px;
+    padding: 8px 15px;
+    margin: 10px;
+}
+
+.navsides li a {
+    text-decoration: none;
+    color: white;
+}
+
+.banner img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+
+/* THE AUDIO CONTAINER */
+
+
+.audio-player-container {
+    width: 500px;
+    background-color: #e9d8d5;
+    /* Soft background color */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    margin: auto;
+    /* Center horizontally within a container */
+
+    position: relative;
+    margin-top: -10%;
+    margin-bottom: 5rem;
+    /* bottom: 5px;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+
+.title {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+    /* Darker text color for good contrast */
+}
+
+audio {
+    width: 100%;
+    border-radius: 8px;
+    height: 30px;
+}
+
+.track-info {
+    margin-top: 5px;
+}
+
+.track-title {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    text-decoration: underline;
+    color: #333;
+}
+
+/* THE AUDIO CONTAINER */
+
+.devider {
+    background: rgb(186, 202, 218);
+    padding: 10px 0;
+}
+
+.devider h1 {
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.aboutRich {
+    padding: 8rem 15rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.aboutRich>img {
+    width: 60vw;
+    height: max-content;
+}
+
+
+/* APPOINTMENT FORM */
+#appointment-form {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    /* Initially hidden */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Popup Form */
+#appointment-popup {
+    background: white;
+    padding: 30px 20px;
+    /* Improved padding for inner spacing */
+    border-radius: 10px;
+    width: 500px;
+    /* Fixed width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* Add spacing between form elements */
+}
+
+/* Form Inputs */
+#appointment-popup input,
+#appointment-popup button {
+    width: 95%;
+    /* Inputs will stretch to fill form width */
+    padding: 10px;
+    /* Adjust padding inside inputs */
+    margin-top: 5px;
+    /* Slight margin for cleaner spacing */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+#appointment-popup button {
+    margin: 2.5px auto;
+}
+
+/* Input Focus Effect */
+#appointment-popup input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Submit and Cancel Buttons */
+#appointment-popup button[type="submit"] {
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#appointment-popup button[type="submit"]:hover {
+    background: #0056b3;
+}
+
+#appointment-popup button[type="button"] {
+    background: #ccc;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+#appointment-popup button[type="button"]:hover {
+    background: #aaa;
+}
+
+/* APPOINTMENT FORM END*/
+
+
+
+.aboutRichR p {
+    color: rgb(0, 0, 0);
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 29px;
+    text-align: left;
+}
+
+.clients {
+    padding: 8rem 15rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.clients>img {
+
+    width: 100%;
+}
+
+.clientsImages {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.clientsImages img {
+    width: 150px;
+    margin: 2rem;
+}
+
+/* TESTIMONIAL SECTION */
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testicontainer {
+    padding: 8rem 15rem 2rem;
+    display: flex;
+    gap: 5rem;
+}
+
+.card {
+    background-color: #052357;
+    border-radius: 40px;
+    color: #FEF3F3;
+    font-size: 21.28px;
+    padding: 3rem 2rem;
+}
+
+.cardUpper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.card hr {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.card>p {
+    margin-bottom: 5rem;
+}
+
+.cardLower {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cardLowerright {
+    /* margin: 0 auto; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardLowerright i {
+    margin: 0 5px;
+}
+
+.testibtns {
+    margin-bottom: 5rem;
+}
+
+.testibtns>i {
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.icon {
+    color: #0a3279;
+    transition: color 0.3s ease;
+    order: 0;
+}
+
+.icon:hover {
+    cursor: pointer;
+    color: #466c96;
+}
+
+/* Videos Section */
+
+.videos {
+    padding: 8rem 15rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.mobilevideoarrow {
+    display: none;
+}
+
+.fa-solid {
+    text-align: center;
+    cursor: pointer;
+}
+
+.videocontainer {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.videocontainer iframe {
+    border-radius: 10px;
+}
+
+.tech {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8rem 22rem 8rem;
+}
+
+.lefttech p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 50px;
+}
+
+/* .tech img {
+    min-width: 450px;   
+    height: auto; 
+} */
+
+footer {
+    background: rgb(186, 202, 218);
+    padding: 3rem 15rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(5, 35, 87);
+}
+
+.leftFooter h1 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.leftFooter p {
+    color: rgb(5, 35, 87);
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.footericon {
+    color: rgb(5, 35, 87);
+    margin-right: 10px;
+}
+
+.rightFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.rightFooter h1 {
+    color: rgb(5, 35, 87);
+    font-size: 25px;
+}
+
+
+.rightFooter button {
+    background-color: rgb(5, 35, 87);
+    color: white;
+    font-size: 15px;
+    padding: 17px 25px;
+    border-radius: 20px;
+}
+
+.poweredBy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.poweredBy img {
+    width: 50px;
+    height: auto;
+    opacity: 0.85;
+}
+
+.poweredBy p {
+    color: rgb(5, 35, 87);
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 1900px) {
+    /* 
+    .audio-player-container {
+        width: 400px;    
+        bottom: 5rem;
+    } */
+
+    .aboutRich,
+    .videos,
+    .tech {
+        padding: 8rem 10rem;
+    }
+
+    .testicontainer {
+        padding: 8rem 7rem 2rem;
+    }
+
+    .aboutRich>img {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .aboutRichR p {
+        text-align: justify;
+        /* font-size: 15px; */
+        line-height: 20px;
+    }
+
+    .aboutRich>img {
+        width: 60vw;
+        height: max-content;
+    }
+}
+
+@media (max-width: 1680px) {
+
+    .audio-player-container {
+        width: 400px;
+        margin-top: -10%;
+        margin-bottom: 3rem;
+    }
+
+    .aboutRich {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .clients {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tech {
+        flex-direction: column-reverse;
+        gap: 5rem;
+    }
+}
+
+@media (max-width: 1400px) {
+
+
+    #video2 {
+        display: none;
+    }
+
+    .testicontainer {
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .clients>img,
+    .tech>img {
+        width: 100%;
+    }
+
+    nav {
+        padding: 0 7rem;
+    }
+
+    .devider h1 {
+        font-size: 25px;
+    }
+
+    .card2 {
+        display: none;
+    }
+
+    .videocontainer {
+        row-gap: 1rem;
+    }
+
+    .dltvideo:nth-child(2) {
+        display: none;
+    }
+
+    .card {
+        padding: 2rem 1rem;
+    }
+
+    footer {
+        padding: 3rem 7rem;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .title {
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+
+    .audio-player-container {
+        width: 350px;
+        position: relative;
+        margin-top: -10%;
+        margin-bottom: 3rem;
+        padding: 10px;
+    }
+
+    .track-title {
+        font-size: 12px;
+    }
+
+    .aboutRichR p {
+        font-size: 15px;
+    }
+
+    nav {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navsides {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dltvideo {
+        display: none;
+    }
+
+    .card3 {
+        display: none;
+    }
+
+    .clients {
+        padding: 5rem 7rem;
+    }
+
+    .clientsImages {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+
+    .aboutRich {
+        padding: 5rem 4rem;
+    }
+
+    .videos {
+        padding: 3rem 2rem;
+    }
+
+    .tech {
+        padding: 5rem 2rem;
+    }
+
+    footer {
+        flex-wrap: wrap;
+        gap: 3rem;
+        justify-content: center;
+    }
+
+    .rightFooter {
+        text-align: center;
+        gap: 0;
+    }
+
+    .devider h1 {
+        font-size: 20px;
+    }
+
+    .testibtns {
+        margin-bottom: 3rem;
+    }
+}
+
+@media (max-width: 600px) {
+
+    nav {
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    nav>ul>li {
+        width: 270px;
+        text-align: center;
+    }
+
+    .rightNav img {
+        margin: 10px auto;
+    }
+
+    .banner img {
+        min-width: 350px;
+        margin-bottom: 3.5rem;
+    }
+
+    .audio-player-container {
+        width: 280px;
+        position: relative;
+        margin-top: -10%;
+        margin-bottom: 1rem;
+        padding: 5px 20px;
+    }
+
+    audio {
+        padding: 1px;
+    }
+
+    .track-info {
+        margin-top: 0px;
+    }
+
+    .clientsImages img {
+        width: 100px;
+        margin: 0.2rem;
+    }
+
+    .videos {
+        display: flex;
+        padding: 3rem 1rem;
+    }
+
+    .videos i {
+        display: none;
+    }
+
+    .videocontainer iframe {
+        width: 300px;
+
+    }
+
+    .clients {
+        padding: 5rem 1.5rem;
+    }
+
+    .tech {
+        padding: 4rem 1.5rem;
+    }
+
+    .mobilevideoarrow {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .lefttech p {
+        font-size: 15px;
+    }
+
+    .testicontainer {
+        padding: 5rem 1rem 2rem;
+    }
+
+    footer {
+        padding: 3rem 1rem;
+    }
+
+    .leftFooter p {
+        font-size: 15px;
+    }
+
+    .rightFooter h1 {
+        font-size: 20px;
+    }
+
+}
